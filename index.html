@@ -7,6 +7,7 @@
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Carter+One&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
 </head>
 
@@ -16,12 +17,46 @@
             <div class="logo">NINJAS IN JAPAN</div>
         </div>
         <div class="container-right">
-            <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div class="form">
-                <input type="text" placeholder="Enter your name">
-                <button>Submit</button>
+            <div class="paragraph">
+                <h1>Get Started</h1>
+                <p>Register now and grab your tickets for the world premiere of Ninjas in Japan!</p>
             </div>
-            <div class="footer">© 2024 Example Company</div>
+            <div class="form">
+                <form action="#" method="post">
+                    <div>
+                        <label for="firstName">First Name:
+                            <input type="text" id="firstName" name="firstName" required>
+                        </label>
+                        <label for="lastName">Last Name:
+                            <input type="text" id="lastName" name="lastName" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">Email:
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="phone">Phone:
+                            <input type="tel" id="phone" name="phone" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">Password:
+                            <input type="password" id="password" name="password" required>
+                        </label>
+                        <label for="confirmPassword">Confirm Password:
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </label>
+                    </div>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required> I accept and agree to the <a href="#">Terms of Use</a>.
+                    </label>
+                    <button type="submit">Create Account</button>
+                </form>
+
+            </div>
+            <div class="footer">
+                Created by Rhythm2107<a href="https://github.com/rhythm2107" target="_blank">
+                    <img src="./img/github.svg"></a></div>
         </div>
     </main>
 </body>
